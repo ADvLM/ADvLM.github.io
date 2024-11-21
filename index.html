@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>ADvLM</title>
+  <!-- <link rel="icon" type="image/x-icon" href="static/images/favicon.ico"> -->
+  <link rel="icon" href="data:,">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Visual Adversarial Attack on Vision-Language Models for Autonomous Driving</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="" target="_blank">Anonymous author</a></span>
+                <!-- <span class="author-block">
+                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
+                  <span class="author-block">
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
+                  </span> -->
+                  </div>
+
+                  <!-- <div class="is-size-5 publication-authors">
+                    <span class="author-block">Institution Name<br>Conferance name and year</span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                  </div> -->
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                    <!-- Supplementary PDF link -->
+                    <!-- <span class="link-block">
+                      <a href="" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Supplementary</span>
+                    </a>
+                  </span> -->
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="E" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <div align="center">
+      <img src="static/images/fontpage.jpg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Illustration of <b><i>ADvLM</i></b>, where visual attacks lead model to generate incorrect decisions, demonstrating the potential risks associated with adversarial vulnerabilities in VLMs for AD.
+        </h2>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Vision-language models (VLMs) have significantly advanced autonomous driving (AD) by enhancing reasoning capabilities. However, these models remain highly vulnerable to adversarial attacks. While existing research has primarily focused on general VLM attacks, the development of attacks tailored to the safety-critical AD context has been largely overlooked. In this paper, we take the first step toward designing adversarial attacks specifically targeting VLMs in AD, exposing the substantial risks these attacks pose within this critical domain. We identify two unique challenges for effective adversarial attacks on AD VLMs: the variability of textual instructions and the time-series nature of visual scenarios. To this end, we propose <b><i>ADvLM</i></b>, the first visual adversarial attack framework specifically designed for VLMs in AD. Our framework introduces Semantic-Invariant Induction, which uses a large language model to create a diverse prompt library of textual instructions with consistent semantic content, guided by semantic entropy. Building on this, we introduce Scenario-Associated Enhancement, an approach where attention mechanisms select key frames and perspectives within driving scenarios to optimize adversarial perturbations that generalize across the entire scenario. Extensive experiments on several AD VLMs over multiple benchmarks show that <b><i>ADvLM</i></b> achieves state-of-the-art attack effectiveness. Moreover, real-world attack studies further validate its applicability and potential in practice. 
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container  is-max-desktop">
+      <h2 class="title is-3">Challenges</h2>
+      <div class="level-set has-text-justified">
+        <p style="font-size: large;">
+          Adversarial attacks in Autonomous Driving (AD) face two distinct challenges compared to general VLMs: 
+          <br><b>(1) Variability of textual instructions</b>, where adversarial perturbations must remain effective across semantically equivalent prompts that convey the same intent but use different phrases. 
+          <br><b>(2) Time-series nature of visual scenarios</b>, requiring perturbations to maintain their effectiveness across a dynamic sequence of frames that reflect changing perspectives and environmental conditions. 
+       </p><br>
+       <img src="static/images/challenge.jpg" alt="Challenge" style="margin: 0 auto; display: block;">
+       <h2 class="subtitle has-text-centered">
+      </h2>
+     </div>
+   </div>
+ </div>
+</section>
+
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container  is-max-desktop">
+      <h2 class="title is-3">Overview</h2>
+      <div class="level-set has-text-justified">
+        <p style="font-size: large;">
+          <b><i>ADvLM</i></b> introduce Semantic-Invariant Induction in the textual domain and Scenario-Associated Enhancement in the visual domain, ensuring attack effectiveness across varied instructions and sequential viewpoints.
+       </p><br>
+       <img src="static/images/framework.jpg" alt="Framework" style="margin: 0 auto; display: block;">
+     </div>
+   </div>
+ </div>
+</section>
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container  is-max-desktop">
+      <h2 class="title is-3">Experiments on Open-loop</h2>
+      <div class="level-set has-text-justified">
+        <p style="font-size: large;">
+          Evaluation results under open-loop conditions: <a href="https://arxiv.org/pdf/2312.14150" target="_blank">DriveLM</a> and <a href="https://arxiv.org/pdf/2312.00438" target="_blank">Dolphins</a>. <b>Bold text</b> indicates the method with the strongest attack effect in each column. Gray cells represent comprehensive evaluation metrics.
+       </p>
+       <img src="static/images/table1.jpg" alt="Result" style="margin: 0 auto; display: block;">
+     </div>
+   </div>
+ </div>
+</section>
+
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container  is-max-desktop">
+      <h2 class="title is-3">Experiments on Closed-loop</h2>
+      <div class="level-set has-text-justified">
+        <p style="font-size: large;">
+          Evaluation Results under closed-loop conditions: <a href="https://arxiv.org/pdf/2312.07488" target="_blank">LMDrive</a>. <b>Bold text</b> indicates the most effective attack in each column.
+       </p>
+       <img src="static/images/table2.jpg" alt="Result" style="margin: 0 auto; display: block;">
+       <br>
+       <p style="font-size: large;">
+        Closed-loop experiment in <strong>Town 03 Route 26</strong> of CARLA. After the attack 
+  (<span style="color: green;">Green</span> → <span style="color: red;">Red</span>), 
+  the vehicle veers towards the gas station, highlighting real-world potential safety risks.
+     </p>
+       <img src="static/images/attack_vis.jpg" alt="Result" style="margin: 0 auto; display: block;">
+     </div>
+   </div>
+ </div>
+</section>
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container  is-max-desktop">
+      <h2 class="title is-3">Black-box Experiments</h2>
+      <div class="level-set has-text-justified">
+        <p style="font-size: large;">
+        <b><i>ADvLM</i></b> significantly reduces performance in black-box settings, with up to <b>7.49%</b> and <b>3.09%</b> Final Score drops on DriveLM and Dolphins, respectively. It also effectively compromises general VLMs, outperforming other methods in both AD-specific and general tasks.
+       </p><br>
+       <img src="static/images/black_exp.jpg" alt="Result" style="margin: 0 auto; display: block;">
+     </div>
+   </div>
+ </div>
+</section>
+
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container  is-max-desktop">
+      <h2 class="title is-3">Analysis</h2>
+      <div class="level-set has-text-justified">
+        <p style="font-size: large;">
+          <b>Textual Instruction Variability</b>: <b><i>ADvLM</i></b> maintains high attack effectiveness under increased textual variability, while other methods like PGD, AnyAttack, and AttackVLM suffer significant performance declines, demonstrating <b><i>ADvLM's</i></b> robustness in handling diverse textual prompts.
+       </p>
+       <img src="static/images/textual_ana.jpg" alt="Result" style="margin: 0 auto; display: block;">
+     </div>
+     <br>
+     <div class="level-set has-text-justified">
+      <p style="font-size: large;">
+      <b>Model Attention</b>: <b><i>ADvLM</i></b> significantly disrupts model attention patterns, reducing SSIM and PCC metrics from over <b>86%</b> pre-attack to as low as <b>14%</b> post-attack, highlighting its effectiveness in destabilizing stable attention across prompts and viewpoints.
+     </p>
+     <img src="static/images/atten_map.jpg" alt="Result" style="margin: 0 auto; display: block;">
+   </div>
+   </div>
+ </div>
+</section>
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container  is-max-desktop">
+      <h2 class="title is-3">Ablation Study</h2>
+      <div class="level-set has-text-justified">
+        <p style="font-size: large;">
+        <b>Perturbation Budgets and Step Sizes.</b>
+       </p>
+       <img src="static/images/ablation1.jpg" alt="Result" style="margin: 0 auto; display: block;">
+       <br>
+       <p style="font-size: large;">
+        <b>Scenario-Associated Enhancement (SAE).</b>
+       </p>
+       <img src="static/images/ablation2.jpg" alt="Result" style="margin: 0 auto; display: block;">
+     </div>
+   </div>
+ </div>
+</section>
+
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container  is-max-desktop">
+      <h2 class="title is-3">Case Study for Real-World Attacks</h2>
+      <div class="level-set has-text-justified">
+        <p style="font-size: large;">
+        Under <b><i>ADvLM's</i></b> attack, vehicles deviated from their intended route in <b>70%</b> of trials, with critical road features missed by the RGB camera and delayed warning responses. This underscores <b><i>ADvLM's</i></b> potential to pose significant risks to real-world AD systems.
+       </p><br>
+       <img src="static/images/case_study.jpg" alt="Result" style="margin: 0 auto; display: block;">
+     </div>
+   </div>
+ </div>
+</section>
+
+<!-- Youtube video -->
+<!-- <section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Video Presentation</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          
+          <div class="publication-video">
+            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- End youtube video -->
+
+
+<!-- Video carousel -->
+<!-- <section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Another Carousel</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-video1">
+          <video poster="" id="video1" autoplay controls muted loop height="100%">
+            <source src="static/videos/carousel1.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video2">
+          <video poster="" id="video2" autoplay controls muted loop height="100%">
+            <source src="static/videos/carousel2.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video3">
+          <video poster="" id="video3" autoplay controls muted loop height="100%">\
+            <source src="static/videos/carousel3.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- End video carousel -->
+
+
+
+
+
+
+<!-- Paper poster -->
+<!-- <section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title">Poster</h2>
+
+      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
+          </iframe>
+        
+      </div>
+    </div>
+  </section> -->
+<!--End paper poster -->
+
+
+<!--BibTex citation -->
+  <!-- <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>BibTex Code Here</code></pre>
+    </div>
+</section> -->
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
